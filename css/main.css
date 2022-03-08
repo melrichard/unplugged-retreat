@@ -87,6 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .content-wrapper{
+     width: 90%;
+     margin: 50px 0;
+   }
+
    /*--------Base Header - Footer Styles-------*/
    header,
    footer{
@@ -99,11 +104,23 @@ textarea {
    
    /*---Header Styles----*/
 
+   header{
+     padding: 15px 0;
+   }
+
    header .content-wrapper{
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     margin: 0;
+   }
+
+   .header-divider{
+     width: 100%;
+     margin: 15px 0;
+     border: 1px;
+    
    }
   
    header nav{
@@ -111,27 +128,55 @@ textarea {
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
+     width: 60%;
    }
 
    header nav ul{
      display: flex;
      justify-content: space-around;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     
    }
 
     /*------Footer Styles------*/
+
+    footer{
+      flex-direction: column;
+    }
+
+    footer .content-wrapper{
+      width: 55%;
+      margin: 50px 0;
+    }
+
+    footer p{
+      margin: 0;
+    }
+
+    footer .contact{
+      margin-bottom: 50px;
+    }
+
     footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
     }
-
+/* to add padding once the icons are added*/
     footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
     }
+
+    footer .copyright {
+      margin: 10px 0;
+    }
    
 /*------------------------- Mobile Styles Homepage -------------------------*/
+
 
 /*-----Hero Area Styles-----*/
 .hero-area{
@@ -148,12 +193,23 @@ aside{
   flex-flow: row wrap;
 }
 
+aside .content-wrapper{
+  margin-top: 25px;
+}
+/*---Why the solution code does not have
+something for this specific margin
+as it is about 30 px and not 50px?
+and why we don't do anything to the email box--*/
 
 /*------ Features Styles -------*/
 .features{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.features h2{
+  margin-bottom: 60px;
 }
 
 .features .features-items{
@@ -163,12 +219,31 @@ aside{
   flex-flow: row wrap;
 }
 
+.features article{
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p{
+  margin: 0;
+}
 
 /*------- Reviews Styles ---------*/
 .reviews{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h2{
+  margin-bottom: 30px;
+}
+/*----why solution code puts 40 px when it is 
+clearly less than that in ps document?*/
+
+.reviews h3{
+  width: 55%;
+  margin: 20px 0
 }
 
 /*------------------------- Mobile Styles About Page-------------------------*/
@@ -186,6 +261,10 @@ aside{
   flex-flow: row wrap;
 }
 
+.contact-content p{
+  margin: 0;
+}
+
 /*------------------------- Mobile Styles FAQ page -------------------------*/
 
 .faq{
@@ -200,6 +279,10 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2{
+  margin-bottom: 40px;
 }
 
 /* ==========================================================================
