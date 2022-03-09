@@ -119,7 +119,7 @@ textarea {
    .header-divider{
      width: 100%;
      margin: 15px 0;
-     border: 1px;
+     height: 1px;
     
    }
   
@@ -373,16 +373,160 @@ clearly less than that in ps document?*/
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+   /*Tablet styles here*/
+      
+    .content-wrapper {
+      max-width: 640px;
+      margin: 90px 0;
+    }
+    /*- header -*/
+      header{
+        justify-content: space-around;
+        padding: 35px 0;
+      }  
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+      header .content-wrapper{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+      }
+
+      header a{
+        width: 40%;
+      }
+
+      .header-divider{
+        display: none;
+      }
+
+      header nav{
+        width: 20%;
+      }
+
+      header nav ul{
+        justify-content: space-between;
+      }
+
+      
+        
+      /*---Homepage styles---*/
+        /*--Hero area--*/
+
+
+        /*--Aside --*/
+
+        aside .content-wrapper{
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row nowrap; /*-- solution puts row wrap--*/
+          margin: 40px 0;
+        }
+
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form{
+          width: 40%;
+          margin:0;
+        } 
+            
+
+        /*-- Features --*/
+
+        .features article{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: column wrap;
+          padding: 20px 0;
+          flex-basis: 50%;
+        }
+
+        .features h2{
+          margin: 0 0 30px;
+        }
+        
+        .features-item-description{
+          width: 63%; /*solution puts 50%*/
+        }
+
+       
+        /*-- Reviews --*/
+
+        .reviews h2{
+          width: 80%;
+        }
+
+        .reviews article{
+          display: flex;
+          justify-content: space-between;
+
+        }
+
+        .reviews article div{
+          width: 49%;
+        }
+
+        /*--footer--*/
+
+        footer .content-wrapper{
+          width: 66%;
+        }
+  
+        .footer-content{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+  
+        footer .contact{
+          margin: 0;
+        }
+
+        footer .copyright {
+          width: 100%;
+        }
+
+      /*---About page styles---*/
+
+      .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        }
+ 
+      .mission-content p {
+        width: 45%;
+      }
+ 
+      .contact-section .content-wrapper h2 {
+        width: 80%;
+      }
+ 
+      .contact-section-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      /*---FAQ page styles---*/
+      .faq .content-wrapper {
+        justify-content: space-between;
+      }
+    
+      .faq-content {
+        flex-basis: 40%;
+      }
+ 
+      .faq h2 {
+        width: 100%;
+      }
+    }
+      
+    
+   @media only screen and (min-width: 1200px) {
+   /*Desktop styles here*/
+   }
 
 /* ==========================================================================
    Print styles.
