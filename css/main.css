@@ -95,6 +95,8 @@ textarea {
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color:  #e2e3ed;
+    text-align: left;
   }
     
  
@@ -103,6 +105,7 @@ textarea {
     list-style-type: none;
     font-weight: bold;
     font-size: 1.125em;
+    text-transform: uppercase;
   }
  
   a {
@@ -110,18 +113,22 @@ textarea {
     text-decoration: none;
 	
   }
- 
+
+  
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
-    line-height: 30px;
- 
+    line-height: 1;
+    font-weight: 500;
+
   }
  
   h3, 
   h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: 500;
+    margin: 20px 0;
  
   }
  
@@ -144,18 +151,19 @@ textarea {
  
   }
  
-   .content-wrapper{
-     width: 90%;
-     margin: 50px 0;
-   }
+  .content-wrapper{
+    width: 90%;
+    margin: 50px 0;
+  }
 
    /*--------Base Header - Footer Styles-------*/
-   header,
-   footer{
+  header,
+  footer{
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #202322;
    }
     
    
@@ -177,6 +185,7 @@ textarea {
      width: 100%;
      margin: 15px 0;
      height: 1px;
+     background: #3a3a3a;
     
    }
   
@@ -201,6 +210,8 @@ textarea {
 
     footer{
       flex-direction: column;
+      color: #ffffff;
+      text-align: center;
     }
 
     footer .content-wrapper{
@@ -208,6 +219,7 @@ textarea {
       margin: 50px 0;
     }
 
+  
     footer p{
       margin: 0;
     }
@@ -242,12 +254,20 @@ textarea {
   flex-flow: row wrap;
 }
 
+.hero-area h1{
+font-family: 'Poppins', sans-serif;
+font-size: 2.25em;
+font-weight: 500;
+/*---line height in PS is auto and code solution is 1.2--*/
+}
+
 /*----- Aside styles -------*/
 aside{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 aside .content-wrapper{
@@ -257,6 +277,32 @@ aside .content-wrapper{
 something for this specific margin
 as it is about 30 px and not 50px?
 and why we don't do anything to the email box--*/
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /*------ Features Styles -------*/
 .features{
@@ -283,6 +329,7 @@ and why we don't do anything to the email box--*/
 
 .features p{
   margin: 0;
+  text-align: center;
 }
 
 /*------- Reviews Styles ---------*/
@@ -290,6 +337,7 @@ and why we don't do anything to the email box--*/
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2{
@@ -309,6 +357,7 @@ clearly less than that in ps document?*/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section{
@@ -316,6 +365,7 @@ clearly less than that in ps document?*/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p{
@@ -329,6 +379,7 @@ clearly less than that in ps document?*/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper{
@@ -437,7 +488,7 @@ clearly less than that in ps document?*/
       max-width: 640px;
       margin: 90px 0;
     }
-    /*- header -*/
+    /*- header (tablet) -*/
       header{
         justify-content: space-around;
         padding: 35px 0;
@@ -464,11 +515,11 @@ clearly less than that in ps document?*/
 
       
         
-      /*---Homepage styles---*/
-        /*--Hero area--*/
+      /*---Homepage styles (tablet)---*/
+        /*--Hero area (tablet)--*/
 
 
-        /*--Aside --*/
+        /*--Aside (tablet)--*/
 
         aside .content-wrapper{
           display: flex;
@@ -484,7 +535,7 @@ clearly less than that in ps document?*/
         } 
             
 
-        /*-- Features --*/
+        /*-- Features (tablet)--*/
 
         .features article{
           display: flex;
@@ -503,7 +554,7 @@ clearly less than that in ps document?*/
         }
 
        
-        /*-- Reviews --*/
+        /*-- Reviews (tablet)--*/
 
         .reviews h2{
           width: 80%;
@@ -519,7 +570,7 @@ clearly less than that in ps document?*/
           width: 49%;
         }
 
-        /*--footer--*/
+        /*--footer (tablet)--*/
 
         footer .content-wrapper{
           width: 66%;
@@ -539,7 +590,7 @@ clearly less than that in ps document?*/
           width: 100%;
         }
 
-      /*---About page styles---*/
+      /*---About page styles (tablet)---*/
 
       .mission-content {
         display: flex;
@@ -562,9 +613,11 @@ clearly less than that in ps document?*/
         align-items: flex-start;
       }
 
-      /*---FAQ page styles---*/
+      /*---FAQ page styles (table)---*/
+     
       .faq .content-wrapper {
         justify-content: space-between;
+      
       }
     
       .faq-content {
@@ -583,15 +636,15 @@ clearly less than that in ps document?*/
     .content-wrapper{
       max-width: 960px;
     }
-    /*--- Header ---*/
+    /*--- Header (desktop) ---*/
     header{
       padding: 25px 0;
     }
     
 
-    /*---Homepage ---/*
+    /*---Homepage (desktop) ---/*
 
-      /*-- Hero area --*/
+      /*-- Hero area (desktop) --*/
       .hero-area .content-wrapper{
         margin: 45px;
       }
@@ -600,7 +653,7 @@ clearly less than that in ps document?*/
         width: 67%;
       }
 
-      /*--Aside --*/
+      /*--Aside (desktop) --*/
       aside .content-wrapper{
         margin: 45px;
         justify-content: space-around;
@@ -611,7 +664,7 @@ clearly less than that in ps document?*/
         width: 30%;
       }
 
-      /*-- Features --*/
+      /*-- Features (desktop) --*/
        /*solution code has .features h2 at width 90% to add if
        not fitting with text font size and all!*/
 
@@ -619,13 +672,13 @@ clearly less than that in ps document?*/
         flex-basis: 33%;
       }
       
-      /*-- Reviews --*/
+      /*-- Reviews (desktop) --*/
       /*solution code has .reviews article div at 42% to verify*/
 
 
-    /*-- Footer --*/
+    /*-- Footer (desktop) --*/
 
-    /*---About page ---*/
+    /*---About page (desktop) ---*/
 
     /***** Will need to check section 
     contact once the other styles are in
@@ -635,7 +688,7 @@ clearly less than that in ps document?*/
       width: 100%;
     }
 
-    /*--- FAQ Page ---*/
+    /*--- FAQ Page (desktop) ---*/
     .faq h2{
       width:100%;
     }
