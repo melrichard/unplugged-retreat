@@ -392,10 +392,7 @@ clearly less than that in ps document?*/
         margin: 0;
       }
 
-      header a{
-        width: 40%;
-      }
-
+      
       .header-divider{
         display: none;
       }
@@ -437,7 +434,6 @@ clearly less than that in ps document?*/
           justify-content: center;
           align-items: center;
           flex-flow: column wrap;
-          padding: 20px 0;
           flex-basis: 50%;
         }
 
@@ -526,6 +522,68 @@ clearly less than that in ps document?*/
     
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+
+    .content-wrapper{
+      max-width: 960px;
+    }
+    /*--- Header ---*/
+    header{
+      padding: 25px 0;
+    }
+    
+
+    /*---Homepage ---/*
+
+      /*-- Hero area --*/
+      .hero-area .content-wrapper{
+        margin: 45px;
+      }
+
+      .hero-area h1{
+        width: 67%;
+      }
+
+      /*--Aside --*/
+      aside .content-wrapper{
+        margin: 45px;
+        justify-content: space-around;
+      }
+
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form{
+        width: 30%;
+      }
+
+      /*-- Features --*/
+       /*solution code has .features h2 at width 90% to add if
+       not fitting with text font size and all!*/
+
+      .features article{
+        flex-basis: 33%;
+      }
+      
+      /*-- Reviews --*/
+      /*solution code has .reviews article div at 42% to verify*/
+
+
+    /*-- Footer --*/
+
+    /*---About page ---*/
+
+    /***** Will need to check section 
+    contact once the other styles are in
+    something seems weird on blank page*/
+
+    .contact-section .content-wrapper h2{
+      width: 100%;
+    }
+
+    /*--- FAQ Page ---*/
+    .faq h2{
+      width:100%;
+    }
+
+
    }
 
 /* ==========================================================================
