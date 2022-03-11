@@ -123,15 +123,14 @@ textarea {
 
   }
  
-  h3, 
+  h3,
   h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
     font-weight: 500;
     margin: 20px 0;
- 
   }
- 
+
   p {
     font-size: 0.875em;
     line-height: 1.285;
@@ -139,10 +138,11 @@ textarea {
   }
  
   img {
- 
+    width: 100%;
   }
  
   figure {
+    margin: 0;
  
   }
  
@@ -180,6 +180,14 @@ textarea {
      flex-flow: row wrap;
      margin: 0;
    }
+
+    header figure {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+}
 
    .header-divider{
      width: 100%;
@@ -252,12 +260,17 @@ textarea {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-image.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1{
 font-family: 'Poppins', sans-serif;
 font-size: 2.25em;
 font-weight: 500;
+line-height: 1.2;
+margin: 0;
 /*---line height in PS is auto and code solution is 1.2--*/
 }
 
@@ -309,6 +322,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-background.jpg') center no-repeat;
+  background-size: cover;
+
 }
 
 .features h2{
@@ -345,6 +361,15 @@ input[type=button] {
 }
 /*----why solution code puts 40 px when it is 
 clearly less than that in ps document?*/
+
+.reviews figure{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
 
 .reviews h3{
   width: 55%;
@@ -483,7 +508,14 @@ clearly less than that in ps document?*/
 
    @media only screen and (min-width: 768px) {
    /*Tablet styles here*/
-      
+    h2{
+      font-size: 2.25em;
+    } 
+    
+    h3, h4{
+      font-size: 1.5em;
+    }
+
     .content-wrapper {
       max-width: 640px;
       margin: 90px 0;
@@ -498,6 +530,10 @@ clearly less than that in ps document?*/
         justify-content: space-between;
         width: 100%;
         margin: 0;
+      }
+
+      header figure{
+        width: 35%;
       }
 
       
@@ -517,9 +553,15 @@ clearly less than that in ps document?*/
         
       /*---Homepage styles (tablet)---*/
         /*--Hero area (tablet)--*/
+        .hero-area{
+          min-height: 600px;
+        }
 
-
-        /*--Aside (tablet)--*/
+        .hero-area h1{
+          font-size: 3em;
+        }
+          
+       /*--Aside (tablet)--*/
 
         aside .content-wrapper{
           display: flex;
@@ -563,11 +605,19 @@ clearly less than that in ps document?*/
         .reviews article{
           display: flex;
           justify-content: space-between;
+        }
 
+        .reviews figure{
+          width:49%;
         }
 
         .reviews article div{
           width: 49%;
+        }
+
+        .reviews h3{
+          margin: 0 0 20px 0;
+          width: 80%;
         }
 
         /*--footer (tablet)--*/
@@ -627,6 +677,10 @@ clearly less than that in ps document?*/
       .faq h2 {
         width: 100%;
       }
+
+      .faq h4{
+        font-size: 0.875em;
+      }
     }
       
     
@@ -636,9 +690,21 @@ clearly less than that in ps document?*/
     .content-wrapper{
       max-width: 960px;
     }
+    h3, 
+    h4{
+      font-size: 1.875em;
+    }
+
+    p{
+      font-size: 1.125em;
+    }
     /*--- Header (desktop) ---*/
     header{
       padding: 25px 0;
+    }
+
+    header figure{
+      width: 26%;
     }
     
 
@@ -649,8 +715,10 @@ clearly less than that in ps document?*/
         margin: 45px;
       }
 
+      
       .hero-area h1{
-        width: 67%;
+        font-size: 3.75em;
+        width: 70%;
       }
 
       /*--Aside (desktop) --*/
@@ -691,6 +759,10 @@ clearly less than that in ps document?*/
     /*--- FAQ Page (desktop) ---*/
     .faq h2{
       width:100%;
+    }
+
+    .faq h4{
+      font-size: 1.125em;;
     }
 
 
