@@ -241,11 +241,27 @@ textarea {
     justify-content: space-around;
     align-items: center;
     }
+
+    footer .social-icons p{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 /* to add padding once the icons are added*/
     footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #e2e3ed;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    }
+
+    footer .social-icons p i{
+      font-size: 1.3125em;
     }
 
     footer .copyright {
@@ -655,6 +671,11 @@ clearly less than that in ps document?*/
   
         footer .contact{
           margin: 0;
+        }
+
+        footer .social-icons {
+          width: 12.5em;
+          justify-content: space-between;
         }
 
         footer .copyright {
