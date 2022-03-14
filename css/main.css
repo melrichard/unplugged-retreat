@@ -118,9 +118,8 @@ textarea {
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
-    line-height: 1;
     font-weight: 500;
-
+    margin: 0;
   }
  
   h3,
@@ -191,7 +190,7 @@ textarea {
 
    .header-divider{
      width: 100%;
-     margin: 15px 0;
+     margin: 10px 0 15px 0;
      height: 1px;
      background: #3a3a3a;
     
@@ -307,6 +306,7 @@ something for this specific margin
 as it is about 30 px and not 50px?
 and why we don't do anything to the email box--*/
 
+
 aside .form {
   margin-top: 30px;
 }
@@ -344,7 +344,8 @@ input[type=button] {
 }
 
 .features h2{
-  margin-bottom: 60px;
+   width: 95%;
+   margin-bottom: 30px;
 }
 
 .features .features-items{
@@ -356,7 +357,7 @@ input[type=button] {
 
 .features article{
   width: 63%;
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 .features i {
@@ -379,6 +380,7 @@ input[type=button] {
 
 .reviews h2{
   margin-bottom: 30px;
+  width: 90%
 }
 /*----why solution code puts 40 px when it is 
 clearly less than that in ps document?*/
@@ -626,6 +628,12 @@ clearly less than that in ps document?*/
 
         .features h2{
           margin: 0 0 30px;
+          width: 100%;
+        }
+
+        .features i {
+          font-size: 4.5em;
+          margin-bottom: 30px;
         }
         
         .features-item-description{
@@ -637,6 +645,7 @@ clearly less than that in ps document?*/
 
         .reviews h2{
           width: 80%;
+          margin-bottom: 20px;
         }
 
         .reviews article{
@@ -653,7 +662,7 @@ clearly less than that in ps document?*/
         }
 
         .reviews h3{
-          margin: 0 0 20px 0;
+          margin: 0 0 15px 0;
           width: 80%;
         }
 
@@ -661,6 +670,7 @@ clearly less than that in ps document?*/
 
         footer .content-wrapper{
           width: 66%;
+          margin: 90px 0;
         }
   
         .footer-content{
@@ -690,6 +700,10 @@ clearly less than that in ps document?*/
         align-items: center;
         padding-top: 20px;
         }
+      
+        .mission h2{
+          width: 95%;
+        }
  
       .mission-content p {
         width: 45%;
@@ -717,7 +731,7 @@ clearly less than that in ps document?*/
       }
     
       .faq-content {
-        flex-basis: 40%;
+        flex-basis: 45%;
       }
  
       .faq h2 {
@@ -736,6 +750,7 @@ clearly less than that in ps document?*/
     .content-wrapper{
       max-width: 960px;
     }
+   
     h3, 
     h4{
       font-size: 1.875em;
@@ -775,7 +790,7 @@ clearly less than that in ps document?*/
 
       aside .content-wrapper .form-description,
       aside .content-wrapper .form{
-        width: 30%;
+        width: 33%;
       }
 
       /*-- Features (desktop) --*/
@@ -785,9 +800,21 @@ clearly less than that in ps document?*/
       .features article{
         flex-basis: 33%;
       }
+
+      .features h2{
+        margin-bottom: 55px;
+      }
       
       /*-- Reviews (desktop) --*/
       /*solution code has .reviews article div at 42% to verify*/
+
+      .reviews h2{
+        margin-bottom: 90px;
+      }
+
+      .reviews article div {
+        width: 46%;
+      }
 
 
     /*-- Footer (desktop) --*/
@@ -797,6 +824,9 @@ clearly less than that in ps document?*/
     /***** Will need to check section 
     contact once the other styles are in
     something seems weird on blank page*/
+    .mission h2{
+      font-size: 3em;
+    }
 
     .map figure{
       padding-bottom: 37.5%;
@@ -804,6 +834,7 @@ clearly less than that in ps document?*/
 
     .contact-section .content-wrapper h2{
       width: 100%;
+      font-size: 3em;
     }
 
     /*--- FAQ Page (desktop) ---*/
