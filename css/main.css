@@ -109,9 +109,8 @@ textarea {
   }
  
   a {
-    color: #e2e3ed;
     text-decoration: none;
-	
+    color: #e2e3ed;
   }
 
   
@@ -142,12 +141,10 @@ textarea {
  
   figure {
     margin: 0;
- 
   }
  
   address {
     font-style: normal;
- 
   }
  
   .content-wrapper{
@@ -193,7 +190,6 @@ textarea {
      margin: 10px 0 15px 0;
      height: 1px;
      background: #3a3a3a;
-    
    }
   
    header nav{
@@ -209,8 +205,7 @@ textarea {
      justify-content: space-around;
      width: 100%;
      margin: 0;
-     padding: 0;
-     
+     padding: 0; 
    }
 
     /*------Footer Styles------*/
@@ -226,7 +221,6 @@ textarea {
       margin: 50px 0;
     }
 
-  
     footer p{
       margin: 0;
     }
@@ -242,21 +236,14 @@ textarea {
     }
 
     footer .social-icons p{
-      
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-/* to add padding once the icons are added*/
-    footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e2e3ed;
-    background-color: #527158;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+      color: #e2e3ed;
+      background-color: #527158;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
     }
 
     footer .social-icons p i{
@@ -286,7 +273,6 @@ font-size: 2.25em;
 font-weight: 500;
 line-height: 1.2;
 margin: 0;
-/*---line height in PS is auto and code solution is 1.2--*/
 }
 
 /*----- Aside styles -------*/
@@ -301,11 +287,6 @@ aside{
 aside .content-wrapper{
   margin-top: 25px;
 }
-/*---Why the solution code does not have
-something for this specific margin
-as it is about 30 px and not 50px?
-and why we don't do anything to the email box--*/
-
 
 aside .form {
   margin-top: 30px;
@@ -340,7 +321,6 @@ input[type=button] {
   flex-flow: row wrap;
   background: url('../img/features-background.jpg') center no-repeat;
   background-size: cover;
-
 }
 
 .features h2{
@@ -382,8 +362,6 @@ input[type=button] {
   margin-bottom: 30px;
   width: 90%
 }
-/*----why solution code puts 40 px when it is 
-clearly less than that in ps document?*/
 
 .reviews figure{
   width: 100%;
@@ -391,12 +369,10 @@ clearly less than that in ps document?*/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 }
 
 .reviews h3{
   width: 55%;
-  margin: 20px 0
 }
 
 /*------------------------- Mobile Styles About Page-------------------------*/
@@ -546,7 +522,8 @@ clearly less than that in ps document?*/
    ========================================================================== */
 
    @media only screen and (min-width: 768px) {
-   /*Tablet styles here*/
+   /*------------------------- Tablet Styles -------------------------*/
+
     h2{
       font-size: 2.25em;
     } 
@@ -559,7 +536,8 @@ clearly less than that in ps document?*/
       max-width: 640px;
       margin: 90px 0;
     }
-    /*- header (tablet) -*/
+
+    /*---- header (tablet) ---*/
       header{
         justify-content: space-around;
         padding: 35px 0;
@@ -574,7 +552,6 @@ clearly less than that in ps document?*/
       header figure{
         width: 35%;
       }
-
       
       .header-divider{
         display: none;
@@ -588,9 +565,35 @@ clearly less than that in ps document?*/
         justify-content: space-between;
       }
 
-      
+
+    /*--footer (tablet)--*/
+
+     footer .content-wrapper{
+      width: 66%;
+      margin: 90px 0;
+      }
+  
+      .footer-content{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+      }
+  
+      footer .contact{
+       margin: 0;
+      }
+
+      footer .social-icons {
+       width: 12.5em;
+       justify-content: space-between;
+      }
+
+      footer .copyright {
+       width: 100%;
+      }
         
-      /*---Homepage styles (tablet)---*/
+      /*-----------Homepage styles (tablet)----------*/
+
         /*--Hero area (tablet)--*/
         .hero-area{
           min-height: 600px;
@@ -605,7 +608,7 @@ clearly less than that in ps document?*/
         aside .content-wrapper{
           display: flex;
           justify-content: space-between;
-          flex-flow: row nowrap; /*-- solution puts row wrap--*/
+          flex-flow: row nowrap; 
           margin: 40px 0;
         }
 
@@ -613,8 +616,7 @@ clearly less than that in ps document?*/
         aside .content-wrapper .form{
           width: 40%;
           margin:0;
-        } 
-            
+        }    
 
         /*-- Features (tablet)--*/
 
@@ -637,10 +639,9 @@ clearly less than that in ps document?*/
         }
         
         .features-item-description{
-          width: 63%; /*solution puts 50%*/
+          width: 63%; 
         }
 
-       
         /*-- Reviews (tablet)--*/
 
         .reviews h2{
@@ -653,12 +654,9 @@ clearly less than that in ps document?*/
           justify-content: space-between;
         }
 
-        .reviews figure{
-          width:49%;
-        }
-
+        .reviews figure,
         .reviews article div{
-          width: 49%;
+          width:49%;
         }
 
         .reviews h3{
@@ -666,31 +664,6 @@ clearly less than that in ps document?*/
           width: 80%;
         }
 
-        /*--footer (tablet)--*/
-
-        footer .content-wrapper{
-          width: 66%;
-          margin: 90px 0;
-        }
-  
-        .footer-content{
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-  
-        footer .contact{
-          margin: 0;
-        }
-
-        footer .social-icons {
-          width: 12.5em;
-          justify-content: space-between;
-        }
-
-        footer .copyright {
-          width: 100%;
-        }
 
       /*---About page styles (tablet)---*/
 
@@ -701,9 +674,9 @@ clearly less than that in ps document?*/
         padding-top: 20px;
         }
       
-        .mission h2{
-          width: 95%;
-        }
+      .mission h2{
+        width: 95%;
+      }
  
       .mission-content p {
         width: 45%;
@@ -726,8 +699,7 @@ clearly less than that in ps document?*/
       /*---FAQ page styles (table)---*/
      
       .faq .content-wrapper {
-        justify-content: space-between;
-      
+        justify-content: space-between; 
       }
     
       .faq-content {
@@ -745,7 +717,7 @@ clearly less than that in ps document?*/
       
     
    @media only screen and (min-width: 1200px) {
-   /*Desktop styles here*/
+   /*------------------------- Desktop Styles -------------------------*/
 
     .content-wrapper{
       max-width: 960px;
@@ -759,6 +731,7 @@ clearly less than that in ps document?*/
     p{
       font-size: 1.125em;
     }
+
     /*--- Header (desktop) ---*/
     header{
       padding: 25px 0;
@@ -768,15 +741,13 @@ clearly less than that in ps document?*/
       width: 26%;
     }
     
-
     /*---Homepage (desktop) ---/*
 
       /*-- Hero area (desktop) --*/
       .hero-area .content-wrapper{
         margin: 45px;
       }
-
-      
+  
       .hero-area h1{
         font-size: 3.75em;
         width: 70%;
@@ -794,9 +765,7 @@ clearly less than that in ps document?*/
       }
 
       /*-- Features (desktop) --*/
-       /*solution code has .features h2 at width 90% to add if
-       not fitting with text font size and all!*/
-
+  
       .features article{
         flex-basis: 33%;
       }
@@ -806,8 +775,7 @@ clearly less than that in ps document?*/
       }
       
       /*-- Reviews (desktop) --*/
-      /*solution code has .reviews article div at 42% to verify*/
-
+      
       .reviews h2{
         margin-bottom: 90px;
       }
@@ -817,13 +785,8 @@ clearly less than that in ps document?*/
       }
 
 
-    /*-- Footer (desktop) --*/
-
-    /*---About page (desktop) ---*/
-
-    /***** Will need to check section 
-    contact once the other styles are in
-    something seems weird on blank page*/
+    /*--------- About page (desktop) ---------*/
+   
     .mission h2{
       font-size: 3em;
     }
@@ -837,7 +800,7 @@ clearly less than that in ps document?*/
       font-size: 3em;
     }
 
-    /*--- FAQ Page (desktop) ---*/
+    /*---------- FAQ Page (desktop) ----------*/
     .faq h2{
       width:100%;
     }
@@ -845,8 +808,6 @@ clearly less than that in ps document?*/
     .faq h4{
       font-size: 1.125em;;
     }
-
-
    }
 
 /* ==========================================================================
